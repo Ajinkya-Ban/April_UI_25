@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 80%;
+        min-height: 100px;
+        border: 1px solid #000;
+        margin: auto;
+      }
+      .container table {
+        width: 700px;
+        margin: auto;
+        border: 1px solid #000;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-collapse: collapse;
+      }
+      .container table,
+      tr,
+      th,
+      td {
+        border: 1px solid #000;
+      }
+      .container table,
+      td,
+      th {
+        text-align: center;
+      }
+      .container table tr:hover {
+        background-color: lightgrey;
+        cursor: pointer;
+      }
+      .container table th,
+      tr,
+      td {
+        padding: 5px;
+      }
+      .main-head {
+        background-color: darkolivegreen;
+        color: white;
+      }
+      /* .container table tr:nth-child(odd) {
+        background-color: lightgreen;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <table>
+        <thead>
+          <th colspan="10" class="main-head">
+            B.Tech Student Examination Records-2024
+          </th>
+        </thead>
+        <tr>
+          <th rowspan="2">Profile Photo</th>
+          <th rowspan="2">Roll No</th>
+          <th colspan="2">FullName</th>
+          <th colspan="2">Mobile</th>
+          <th colspan="3">Marks</th>
+          <th rowspan="2">Total</th>
+        </tr>
+
+        <tr>
+          <th>FirstName</th>
+          <th>LastName</th>
+          <th>Primary</th>
+          <th>Secondary</th>
+          <th>S1</th>
+          <th>S2</th>
+          <th>S3</th>
+        </tr>
+
+        <tr>
+          <td>
+            <img src="imgs/person.jpg" width="50px" height="50px" />
+          </td>
+          <td>10001</td>
+          <td>Yogesh</td>
+          <td>Kumar</td>
+          <td>8989898989</td>
+          <td>9898989898</td>
+          <td>78</td>
+          <td>87</td>
+          <td>98</td>
+          <td>270</td>
+        </tr>
+
+        <tr>
+          <td>
+            <img src="imgs/person.jpg" width="50px" height="50px" />
+          </td>
+          <td>10002</td>
+          <td>Amar</td>
+          <td>Kumar</td>
+          <td>8989848989</td>
+          <td>9898289898</td>
+          <td>5</td>
+          <td>15</td>
+          <td>10</td>
+          <td>30</td>
+        </tr>
+
+        <tr>
+          <td>
+            <img src="imgs/person.jpg" width="50px" height="50px" />
+          </td>
+          <td>10003</td>
+          <td>Ajay</td>
+          <td>Devgan</td>
+          <td>8389898989</td>
+          <td>9198989898</td>
+          <td>5</td>
+          <td>15</td>
+          <td>10</td>
+          <td>30</td>
+        </tr>
+
+        <tr>
+          <td>
+            <img src="imgs/person.jpg" width="50px" height="50px" />
+          </td>
+          <td>10004</td>
+          <td>Sanjay</td>
+          <td>Datta</td>
+          <td>8359898989</td>
+          <td>9168989898</td>
+          <td>5</td>
+          <td>25</td>
+          <td>10</td>
+          <td>40</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
