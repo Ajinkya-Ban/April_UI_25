@@ -4,13 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Demo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <style>
       .container {
         width: 80%;
         min-height: 100px;
         margin: auto;
-        border: 1px solid #000;
+        border: 1px solid lightgray;
         padding: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+      .box {
+        display: flex;
+      }
+      .imgs {
+        display: flex;
+        flex-basis: 40%;
+      }
+
+      .reg {
+        display: flex;
+        flex-basis: 60%;
+      }
+      .imgs img {
+        width: 100%;
       }
       .container h1 {
         text-align: center;
@@ -19,12 +40,34 @@
         width: 600px;
         margin: auto;
         border-collapse: collapse;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
       }
       .container table,
       tr,
       td {
-        border: 1px solid #000;
+        border: 1px solid lightgray;
         padding: 6px;
+      }
+      input[type="text"],
+      input[type="number"],
+      input[type="email"],
+      input[type="date"] {
+        width: 90%;
+        padding: 5px;
+      }
+      .labl-center {
+        text-align: right;
+      }
+      .combo {
+        width: 94%;
+        padding: 5px;
+      }
+      .btnreg {
+        width: 30%;
+        padding: 9px;
+        background-color: crimson;
+        color: white;
+        border: none;
       }
     </style>
   </head>
@@ -32,32 +75,152 @@
     <div class="container">
       <form>
         <h1>Student Registration Form</h1>
-        <table>
-          <tr>
-            <td>
-              <label for="name">Fullname</label>
-            </td>
-            <td>
-              <input
-                type="text"
-                placeholder="Enter fullname here"
-                id="name"
-                name="name"
-                autocomplete="off"
-                required
-                readonly
-                value="abc"
-              />
-            </td>
-          </tr>
+        <div class="box">
+          <div class="imgs">
+            <img src="imgs/form.jpg" />
+          </div>
+          <div class="reg">
+            <table>
+              <tr>
+                <td class="labl-center">
+                  <label for="name">Fullname</label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    placeholder="Enter fullname here"
+                    id="name"
+                    name="name"
+                    autocomplete="off"
+                    required
+                  />
+                </td>
+              </tr>
 
-          <tr>
-            <td></td>
-            <td>
-              <button>Register</button>
-            </td>
-          </tr>
-        </table>
+              <tr>
+                <td class="labl-center">
+                  <label for="name">Mobile</label>
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    placeholder="Enter mobile here"
+                    id="mob"
+                    name="mob"
+                    autocomplete="off"
+                    required
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td class="labl-center">
+                  <label for="name">Email</label>
+                </td>
+                <td>
+                  <input
+                    type="email"
+                    placeholder="Enter email here"
+                    id="email"
+                    name="email"
+                    autocomplete="off"
+                    required
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td class="labl-center">
+                  <label for="name">Gender</label>
+                </td>
+                <td>
+                  <input type="radio" name="gender" id="male" value="Male" />
+                  <label for="male">Male</label>
+                  <input
+                    type="radio"
+                    name="gender"
+                    id="female"
+                    value="Female"
+                  />
+                  <label for="female">Female</label>
+                  <input type="radio" name="gender" id="other" value="Other" />
+                  <label for="other">Other</label>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="labl-center">
+                  <label for="name">Birthdate</label>
+                </td>
+                <td>
+                  <input type="date" />
+                </td>
+              </tr>
+
+              <tr>
+                <td class="labl-center">
+                  <label for="name">Select Country</label>
+                </td>
+                <td>
+                  <select id="country" class="combo">
+                    <option value="select">Select</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Russia">Russia</option>
+                  </select>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="labl-center">
+                  <label for="name">Select State</label>
+                </td>
+                <td>
+                  <select id="state" class="combo">
+                    <option value="select">Select</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="los">Los angeles</option>
+                    <option value="London">London</option>
+                    <option value="Rubel">Rubel</option>
+                  </select>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="labl-center">
+                  <label for="name">Enter City</label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    placeholder="Enter city here"
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td class="labl-center">
+                  <label for="name">Upload Photo</label>
+                </td>
+                <td>
+                  <input type="file" id="file" />
+                </td>
+              </tr>
+
+              <tr>
+                <td></td>
+                <td>
+                  <button class="btnreg">
+                    <i class="fa-solid fa-user-plus"></i> Register
+                  </button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
       </form>
     </div>
   </body>
