@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 20px;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 10px;
+  width: 80%;
+}
+
+td,
+th {
+  padding: 10px;
+  background-color: skyblue;
+  vertical-align: top;
+}
+
+th {
+  background-color: lightyellow;
+}
+input[type="text"],
+input[type="password"],
+textarea,
+select,
+input[type="file"] {
+  width: 100%;
+  padding: 6px;
+  background-color: #e0ffe0;
+  border: 1px solid #ccc;
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #e0ffe0;
+  border: 1px solid #000;
+  cursor: pointer;
+}
