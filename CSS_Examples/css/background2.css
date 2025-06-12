@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.box {
+  width: 80%;
+  height: 800px;
+  margin: auto;
+  border: 1px solid #000;
+  /* background-image: url("../imgs/Plain-Dosa.webp"), url("../imgs/banner.png");
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: right top, left top; */
+
+  background-image: url("../imgs/Plain-Dosa.webp");
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  background-attachment: scroll;
+  /* background-position: bottom center; */
+}
+.text p {
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  text-align: justify;
+}
