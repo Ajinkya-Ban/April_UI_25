@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      section {
+        width: 80%;
+        height: 400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* background-color: #000; */
+        box-shadow: 0 25px 30px rgba(0, 0, 0, 0.5);
+        display: flex;
+      }
+      .content {
+        width: calc(50% - 50px);
+        height: 100%;
+        background-color: #000;
+        box-sizing: border-box;
+        padding: 30px;
+      }
+      .content h1 {
+        color: white;
+        margin-bottom: 10px;
+        font-size: 2.1em;
+      }
+      .content p {
+        color: white;
+        font-size: 1.1em;
+        text-align: justify;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .imageBox {
+        width: calc(50% + 50px);
+        height: 100%;
+        /* background: #f00; */
+        border-left: 100px solid #000;
+        border-bottom: 400px solid transparent;
+        /* background-image: url(./imgs/Plain-Dosa.webp);
+        background-size: cover;
+        background-repeat: no-repeat; */
+      }
+      .imageBox img {
+        position: relative;
+        width: 118%;
+        height: 400px;
+        margin-left: -99px;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="content">
+        <h1>About Nature</h1>
+        <p>
+          Nature encompasses all living and non-living things on Earth,
+          including the physical world, life, and their interactions. It's the
+          environment we live in, providing us with essential resources and
+          shaping our existence. Nature includes everything from the atmosphere
+          and climate to plants, animals, and even humans. Nature encompasses
+          all living and non-living things on Earth, including the physical
+          world, life, and their interactions. It's the environment we live in,
+          providing us with essential resources and shaping our existence.
+          Nature includes everything from the atmosphere and climate to plants,
+          animals, and even humans.
+        </p>
+      </div>
+      <div class="imageBox">
+        <img src="imgs/nature.jpeg" />
+      </div>
+    </section>
+  </body>
+</html>
