@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  min-height: 100px;
+  margin: auto;
+  border: 1px solid lightgray;
+  display: grid;
+  grid-template-columns: 7% repeat(3, 1fr);
+  grid-template-rows: 60px repeat(3, 200px);
+
+  grid-template-areas:
+    "nav nav nav nav"
+    "sidebar ai infra service"
+    "sidebar smartgrid smartgrid security1"
+    "sidebar security2 data data";
+}
+
+.nav {
+  background-color: black;
+  color: white;
+  grid-area: nav;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search {
+  width: 40%;
+  position: relative;
+  /* border: 4px solid red; */
+}
+.icon ul {
+  list-style: none;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon ul li {
+  padding-left: 15px;
+  padding-right: 5px;
+  font-size: 20px;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 7px 0;
+  border: none;
+  background-color: rgba(90, 90, 90, 0.6);
+  border-bottom: 1px solid lightgray;
+  outline: none;
+  color: white;
+}
+.search-icon {
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+}
+.sidebar {
+  background-color: lightgray;
+  color: black;
+  grid-area: sidebar;
+}
+.ai {
+  background-color: #eee;
+  color: black;
+  grid-area: ai;
+  margin: 10px;
+}
+.ai h1 {
+  padding: 10px;
+  font-weight: 200;
+}
+.ai p {
+  padding: 10px;
+}
+.btn {
+  width: 150px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: 1px solid #2196f3;
+  background-color: transparent;
+  color: #2196f3;
+}
+
+.infra {
+  background-color: #eee;
+  color: black;
+  grid-area: infra;
+  margin: 10px;
+}
+.infra h1 {
+  padding: 10px;
+  font-weight: 200;
+}
+.infra p {
+  padding: 10px;
+}
+.service {
+  background-color: #eee;
+  color: black;
+  grid-area: service;
+  margin: 10px;
+}
+.service h1 {
+  padding: 10px;
+  font-weight: 200;
+}
+.service p {
+  padding: 10px;
+}
+.smartgrid {
+  background-color: darkslategray;
+  color: white;
+  grid-area: smartgrid;
+  margin: 10px;
+  position: relative;
+}
+.smartgrid img {
+  width: 100%;
+  height: 100%;
+}
+
+.smart-con {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 15px;
+}
+.smart-con h1 {
+  font-weight: 200;
+  margin-bottom: 15px;
+}
+.smart-con p {
+  width: 380px;
+  text-align: justify;
+}
+.btn-smart {
+  width: 150px;
+  padding: 10px 20px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: #fff;
+  margin-top: 25px;
+}
+
+.security1 {
+  background-color: #eee;
+  color: black;
+  grid-area: security1;
+  margin: 10px;
+}
+.security2 {
+  background-color: #eee;
+  color: black;
+  grid-area: security2;
+  margin: 10px;
+}
+.data {
+  background-color: darkslategray;
+  color: white;
+  grid-area: data;
+  margin: 10px;
+  position: relative;
+}
+.data img {
+  width: 100%;
+  height: 100%;
+}
+.smart-con2 {
+  position: absolute;
+  top: 0;
+}
+.smart-con2 h1 {
+  padding: 10px;
+  font-weight: 200;
+}
+.smart-con2 p {
+  width: 380px;
+  padding: 10px;
+  text-align: justify;
+}
+.btn-data {
+  width: 150px;
+  padding: 10px 20px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: #fff;
+  margin-top: 20px;
+  margin-left: 10px;
+}
